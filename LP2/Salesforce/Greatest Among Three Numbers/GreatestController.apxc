@@ -1,0 +1,10 @@
+public class GreatestController {
+    public Double num1 {get; set;}
+    public Double num2 {get; set;}
+    public Double num3 {get; set;}
+    public Double result {get; set;}
+    
+    public void max(){
+        result = Greatest.max(num1, num2, num3);
+    }
+}

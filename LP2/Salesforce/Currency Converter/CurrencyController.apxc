@@ -1,0 +1,15 @@
+public class CurrencyController {
+    public Double amount {get; set;}
+    public String option {get; set;}
+    public Double result {get; set;}
+        
+    public void convert(){
+        if(option == 'Dollar'){
+            result = Currency.rToD(amount);
+        }else if(option == 'Euro'){
+            result = Currency.rToE(amount);
+        }else{
+            result = null;
+        }
+    }
+}

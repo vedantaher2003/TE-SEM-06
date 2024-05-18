@@ -1,0 +1,18 @@
+<apex:page controller="MarksheetController">
+    <apex:form>
+        <apex:pageBlock title="Generate Student Marksheet">
+            Enter Marks Out of 100 <br/><br/>
+            Physics : <apex:inputText value="{!physics}"/> <br/><br/>
+            Chemistry : <apex:inputText value="{!chemistry}"/> <br/><br/>
+            Maths : <apex:inputText value="{!maths}"/> <br/><br/>
+            
+            <apex:commandButton value="Generate" action="{!marksheet}"/>
+            
+            <br/><br/>
+            
+            <apex:outputPanel rendered="{!result != null}">
+                Result : {!result}
+            </apex:outputPanel>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

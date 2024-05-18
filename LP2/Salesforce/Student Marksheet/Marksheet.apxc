@@ -1,0 +1,16 @@
+public class Marksheet {
+    public static String result(Integer Physics, Integer Chemistry, Integer Maths){
+        Double percentage = (Physics + Chemistry + Maths) / 300;
+        String result = null;
+        if(percentage > 80){
+            result = 'A';
+        }else if(percentage > 60){
+            result = 'B';
+        }else if(percentage > 40){
+            result = 'C';
+        }else{
+            result = 'Fail';
+        }
+        return result;
+    }
+}

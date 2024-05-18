@@ -1,0 +1,9 @@
+public class Temperature {
+    public static Double cToF(Double value){
+        return 32+1.8*value;
+    }
+    
+    public static Double fToC(Double value){
+        return (value-32)/1.8;
+    }
+}

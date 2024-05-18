@@ -1,0 +1,20 @@
+<apex:page controller="CalculatorController">
+    <apex:form>
+        <apex:pageBlock title="Mathematical Calculator">
+            Enter Numbers <br/><br/>
+            Number 1  : <apex:inputText value="{!num1}"/><br/><br/>
+            Number 2  : <apex:inputText value="{!num2}"/><br/><br/>
+            
+            <apex:commandButton value="Add" action="{!add}"/>
+            <apex:commandButton value="Subtract" action="{!subtract}"/>
+            <apex:commandButton value="Myultiply" action="{!multiply}"/>
+            <apex:commandButton value="Divide" action="{!divide}"/>
+          
+            <br/><br/>
+            
+            <apex:outputPanel rendered="{!result != null}">
+                Result : {!result}
+            </apex:outputPanel>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,22 @@
+<apex:page controller="CurrencyController">
+    <apex:form>
+        <apex:pageBlock title="Currency Converter">
+            Enter Amount : <apex:inputText value="{!amount}"/> <br/><br/>
+            
+            Conver To : <apex:selectList value="{!option}" size="1">
+                <apex:selectOption itemValue="Dollar" itemLabel="Dollar"></apex:selectOption>
+                <apex:selectOption itemValue="Euro" itemLabel="Euro"></apex:selectOption>
+            </apex:selectList>
+            
+            <br/><br/>
+            
+            <apex:commandButton value="Convert" action="{!convert}"/>
+            
+            <br/><br/>
+            
+            <apex:outputPanel rendered="{!result != null}">
+               Amount : {!result} {!option}
+            </apex:outputPanel>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

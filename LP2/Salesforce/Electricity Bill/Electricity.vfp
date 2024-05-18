@@ -1,0 +1,15 @@
+<apex:page controller="ElectricityController">
+    <apex:form>
+        <apex:pageBlock title="Calculate Electricity Bill">
+            Enter Consumed Units : <apex:inputText value="{!units}"/> <br/><br/>
+            
+            <apex:commandButton value="Calculate" action="{!bill}"/>
+            
+            <br/><br/>
+            
+            <apex:outputPanel rendered="{!result != null}">
+                Total Bill : {!result}
+            </apex:outputPanel>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,9 @@
+public class Currency {
+    public static Double rToD(Double amount){
+        return amount/80;
+    }
+    
+    public static Double rToE(Double amount){
+        return amount/90;
+    }
+}

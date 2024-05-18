@@ -1,0 +1,18 @@
+<apex:page controller="GreatestController">
+    <apex:form>
+        <apex:pageBlock title="Greatest Among Three Numbers">
+            Enter numbers <br/><br/>
+            Number 1: <apex:inputText value="{!num1}"/> <br/><br/>
+            Number 2: <apex:inputText value="{!num2}"/> <br/><br/>
+            Number 3: <apex:inputText value="{!num3}"/> <br/><br/>
+            
+            <apex:commandButton value="Find" action="{!max}"/>
+            
+            <br/><br/>
+            
+            <apex:outputPanel rendered="{!result != null}">
+                Result : {!result}
+            </apex:outputPanel>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

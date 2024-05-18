@@ -1,0 +1,18 @@
+public class CalculatorController {
+    public Double num1 {get; set;}
+    public Double num2 {get; set;}
+    public Double result {get; set;}
+    
+    public void add(){
+        result = Calculator.add(num1, num2);
+    }
+    public void subtract(){
+        result = Calculator.subtract(num1, num2);
+    }
+    public void multiply(){
+        result = Calculator.multiply(num1, num2);
+    }
+    public void divide(){
+        result = Calculator.divide(num1, num2);
+    }
+}

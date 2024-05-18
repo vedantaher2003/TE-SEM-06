@@ -1,0 +1,15 @@
+public class TemperatureController {
+    public Double temp {get; set;}
+    public String option {get; set;}
+    public Double result {get; set;}
+        
+    public void convert(){
+        if(option == 'Celsius'){
+            result = Temperature.fToC(temp);
+        }else if(option == 'Fahrenheit'){
+            result = Temperature.cToF(temp);
+        }else{
+            result = null;
+        }
+    }
+}
